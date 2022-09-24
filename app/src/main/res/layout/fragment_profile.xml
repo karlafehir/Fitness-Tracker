@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/im_profile"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/main_gradient"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="36dp"
+        android:text="name"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/im_profile"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_injury"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:text="ozljeda"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintStart_toEndOf="@+id/im_profile"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+
+  <!--  <TextView
+        android:id="@+id/tv_totalKcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:text="kcals today"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintStart_toEndOf="@+id/im_profile"
+        app:layout_constraintTop_toBottomOf="@+id/tv_injury" />
+        -->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_edit"
+        android:layout_width="76dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/btn_gradient"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Uredi"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_injury"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/im_weight_card"
+        android:layout_width="100dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/shadow_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_profile" />
+
+    <ImageView
+        android:id="@+id/im_height_card"
+        android:layout_width="100dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/shadow_card"
+        app:layout_constraintEnd_toStartOf="@+id/im_age_card"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toEndOf="@+id/im_weight_card"
+        app:layout_constraintTop_toBottomOf="@+id/im_profile" />
+
+    <ImageView
+        android:id="@+id/im_age_card"
+        android:layout_width="100dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="36dp"
+        android:src="@drawable/shadow_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_profile" />
+
+    <TextView
+        android:id="@+id/tv_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Težina"
+        app:layout_constraintBottom_toBottomOf="@+id/im_weight_card"
+        app:layout_constraintEnd_toEndOf="@+id/im_weight_card"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/im_weight_card" />
+
+    <TextView
+        android:id="@+id/tv_weight_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="0"
+        android:textSize="20dp"
+        android:textColor="@color/purple_gradient"
+        app:layout_constraintBottom_toTopOf="@+id/tv_weight"
+        app:layout_constraintEnd_toEndOf="@+id/im_weight_card"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="@+id/im_weight_card"
+        app:layout_constraintTop_toTopOf="@+id/im_weight_card"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_height_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="0"
+        android:textColor="@color/purple_gradient"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/im_height_card"
+        app:layout_constraintStart_toStartOf="@+id/im_height_card"
+        app:layout_constraintTop_toTopOf="@+id/im_height_card" />
+
+    <TextView
+        android:id="@+id/tv_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Visina"
+        app:layout_constraintBottom_toBottomOf="@+id/im_height_card"
+        app:layout_constraintEnd_toEndOf="@+id/im_height_card"
+        app:layout_constraintStart_toStartOf="@+id/im_height_card"
+        app:layout_constraintTop_toBottomOf="@+id/tv_height_input"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_age_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="0"
+        android:textColor="@color/purple_gradient"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_age"
+        app:layout_constraintEnd_toEndOf="@+id/im_age_card"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/im_age_card"
+        app:layout_constraintTop_toTopOf="@+id/im_age_card"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Dob  "
+        app:layout_constraintBottom_toBottomOf="@+id/im_age_card"
+        app:layout_constraintEnd_toEndOf="@+id/im_age_card"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="@+id/im_age_card" />
+
+    <TextView
+        android:id="@+id/tv_povijest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="215dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Povijest vježbanja:"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_weight_card" />
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/rv_workout_history"-->
+<!--        android:layout_width="409dp"-->
+<!--        android:layout_height="455dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tv_povijest"-->
+<!--        tools:listitem="@layout/history_card" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView3"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="44dp"-->
+<!--        android:layout_marginStart="36dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:alpha="0.45"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.029"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tv_povijest"-->
+<!--        app:srcCompat="@drawable/main_gradient" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView4"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="44dp"-->
+<!--        android:layout_marginStart="36dp"-->
+<!--        android:layout_marginTop="6dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:alpha="0.45"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.029"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageView3"-->
+<!--        app:srcCompat="@drawable/main_gradient" />-->
+
+    <TextView
+        android:id="@+id/tv_workout_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Neka vjezba"
+        android:textColor="@color/blue_history"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_povijest"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_workout_kcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="calories"
+        android:textColor="#b0b4b6"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_povijest"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_workout_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="datum"
+        android:textColor="#808486"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_workout_kcal"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_workout_history"
+        app:layout_constraintTop_toBottomOf="@+id/tv_povijest"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

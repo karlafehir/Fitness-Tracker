@@ -1,0 +1,10 @@
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Dijabetes"
+    android:fontFamily="@font/poppins_regular"
+    android:textSize="14dp"
+    android:padding="4dp"
+    android:textColor="@color/black"
+    xmlns:android="http://schemas.android.com/apk/res/android"/>

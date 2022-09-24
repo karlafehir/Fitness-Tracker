@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/im_bmi"
+        android:layout_width="338dp"
+        android:layout_height="171dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_gradient" />
+
+    <TextView
+        android:id="@+id/tv_bmi"
+        android:layout_width="164dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/poppins_medium"
+
+        android:text="BMI (Indeks tjelesne mase)"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/im_bmi"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="@+id/im_bmi"
+        app:layout_constraintTop_toTopOf="@+id/im_bmi" />
+
+    <TextView
+        android:id="@+id/tv_bmi_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+
+        android:fontFamily="@font/poppins_medium"
+        android:text="Vaš BMI je normalan."
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@+id/im_bmi"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bmi" />
+
+    <TextView
+        android:id="@+id/tv_bmi_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:alpha="4"
+        android:fontFamily="@font/poppins_medium"
+        android:text="22.1"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:translationZ="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/im_chart"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="@+id/im_chart"
+        app:layout_constraintTop_toTopOf="@+id/im_chart" />
+
+    <ImageView
+        android:id="@+id/im_chart"
+        android:layout_width="170dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="4dp"
+        android:translationZ="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/im_bmi"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/im_bmi"
+        app:layout_constraintTop_toTopOf="@+id/im_bmi"
+        app:srcCompat="@drawable/img" />
+
+    <ImageView
+        android:id="@+id/first_card"
+        android:layout_width="340dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="12dp"
+        android:alpha="0.45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/main_gradient" />
+
+
+    <ImageView
+        android:id="@+id/second_card"
+        android:layout_width="340dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0.45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_card"
+        app:srcCompat="@drawable/main_gradient" />
+
+    <ImageView
+        android:id="@+id/second_card2"
+        android:layout_width="340dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="50dp"
+        android:alpha="0.45"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second_card"
+        app:srcCompat="@drawable/main_gradient" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="200dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Preporučene vježbe:"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_bmi" />
+
+    <TextView
+        android:id="@+id/tv_workout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Program za donji dio tijela"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/first_card"
+        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintStart_toStartOf="@+id/first_card"
+        app:layout_constraintTop_toTopOf="@+id/first_card" />
+
+    <TextView
+        android:id="@+id/tv_workout_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Program za donji dio tijela"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/second_card"
+        app:layout_constraintTop_toTopOf="@+id/second_card" />
+
+    <TextView
+        android:id="@+id/tv_workout_title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Program"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/second_card2"
+        app:layout_constraintTop_toTopOf="@+id/second_card2" />
+
+    <TextView
+        android:id="@+id/tv_workout_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.6"
+        android:fontFamily="@font/poppins_regular"
+        android:text="4 vježbe | 30 min"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/first_card"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="@+id/first_card"
+        app:layout_constraintTop_toBottomOf="@+id/tv_workout_title" />
+
+    <TextView
+        android:id="@+id/tv_workout_description2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:alpha="0.6"
+        android:fontFamily="@font/poppins_regular"
+        android:text="4 vježbe | 30 min"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@+id/second_card"
+        app:layout_constraintTop_toBottomOf="@+id/tv_workout_title2" />
+
+    <TextView
+        android:id="@+id/tv_workout_description3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:alpha="0.6"
+        android:fontFamily="@font/poppins_regular"
+        android:text="4 vježbe | 30 min"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@+id/second_card2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_workout_title3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_start_workout"
+        android:layout_width="91dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_white"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Započni"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_gradient"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/first_card"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="@+id/first_card"
+        app:layout_constraintTop_toBottomOf="@+id/tv_workout_description"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_start_workout2"
+        android:layout_width="91dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_white"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Započni"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_gradient"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/second_card"
+        app:layout_constraintTop_toBottomOf="@+id/tv_workout_description2"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_start_workout3"
+        android:layout_width="91dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_white"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Započni"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_gradient"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/second_card2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_workout_description3"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

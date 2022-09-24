@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Zavrsni_1.0</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string-array name="injuries">
+        <item>Dijabetes</item>
+        <item>Invaliditet</item>
+        <item>Ozljeda koljena</item>
+        <item>Ozljeda leđa</item>
+        <item>Nema</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
